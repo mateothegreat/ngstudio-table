@@ -1,0 +1,26 @@
+:host {
+
+    .wrapper {
+
+        display: flex;
+
+        cursor: var(--row-cursor);
+
+        &:hover {
+
+            background-color: var(--row-hover-background-color);
+
+        }
+
+        .row {
+
+            .actions {
+
+                width: 100%;
+            }
+
+        }
+
+    }
+
+}

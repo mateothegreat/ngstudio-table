@@ -1,0 +1,12 @@
+<div [style.min-width]="cell?.width"
+     [ngStyle]="cell?.theme"
+     [style.text-align]="cell?.theme?.textAlign"
+     class="wrapper ngstudio-table-cell">
+
+    <ng-container #container></ng-container>
+
+    <div *ngIf="!cell.cellComponentType"
+         (click)="onCellClick()"
+         class="label">{{ data }}</div>
+
+</div>

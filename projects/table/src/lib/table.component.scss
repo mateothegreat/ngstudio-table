@@ -1,0 +1,28 @@
+:host {
+
+    .wrapper {
+
+        background-color: var(--container-background-color);
+        border: var(--container-border);
+        width: fit-content;
+
+        .table-rows {
+
+
+            .table-row {
+
+                border-bottom: 1px solid var(--row-border-bottom-color);
+
+                &:last-child {
+
+                    border: 0;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

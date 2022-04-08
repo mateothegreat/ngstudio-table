@@ -1,0 +1,13 @@
+<div class="wrapper"
+     [style.width]="cell?.width">
+
+    <div *ngFor="let action of cell?.actions"
+         class="icon"
+         (click)="onActionClick(action)">
+
+        <i [class]="action.iconClass"
+           [style.color]="action.color"></i>
+
+    </div>
+
+</div>

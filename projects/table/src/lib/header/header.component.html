@@ -1,0 +1,12 @@
+<div class="wrapper ngstudio-table-header"
+     [style.--header-background-color]="instance.config.theme?.header?.backgroundColor"
+     [style.--header-border-bottom-color]="instance.config.theme?.header?.borderBottomColor">
+
+    <div *ngFor="let cell of instance.config.header">
+
+        <lib-header-cell [instance]="instance"
+                         [cell]="cell"></lib-header-cell>
+
+    </div>
+
+</div>

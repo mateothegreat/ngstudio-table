@@ -1,0 +1,25 @@
+<div class="wrapper"
+     [style.--row-cursor]="instance.config.theme?.row?.cursor"
+     [style.--row-hover-background-color]="instance.config.theme?.row?.hover?.backgroundColor">
+
+    <div *ngFor="let cell of instance.config.header"
+         class="row ngstudio-table-row">
+
+        <lib-row-cell *ngIf="!cell.actions"
+                      [instance]="instance"
+                      [data]="row[cell.name]"
+                      [row]="row"
+                      [cell]="cell"></lib-row-cell>
+
+        <div *ngIf="cell.actions" class="actions ngstudio-table-actions">
+
+            <lib-row-cell-actions [instance]="instance"
+                                  [row]="row"
+                                  [cell]="cell"
+                                  [data]="row[cell.name]"></lib-row-cell-actions>
+
+        </div>
+
+    </div>
+
+</div>

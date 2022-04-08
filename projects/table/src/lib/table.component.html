@@ -1,0 +1,25 @@
+<div class="wrapper ngstudio-table"
+     [style.width]="instance.config.theme?.container?.width"
+     [style.--container-border]="instance.config.theme?.container?.border"
+     [style.--container-background-color]="instance.config.theme?.container?.backgroundColor">
+
+    <div class="table-header">
+
+        <lib-header [instance]="instance"></lib-header>
+
+    </div>
+
+    <div class="table-rows">
+
+        <div *ngFor="let row of instance.config.data$ | async"
+             [style.--row-border-bottom-color]="instance.config.theme?.row?.borderBottomColor"
+             class="table-row">
+
+            <lib-row [instance]="instance"
+                     [row]="row"></lib-row>
+
+        </div>
+
+    </div>
+
+</div>

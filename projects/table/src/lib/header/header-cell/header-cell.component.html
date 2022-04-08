@@ -1,0 +1,8 @@
+<div class="wrapper" [style.width]="cell?.width"
+     [style.text-align]="cell.theme?.textAlign">
+
+    <ng-container #container></ng-container>
+
+    <div *ngIf="!cell?.headerComponentType && cell?.label" class="label">{{ cell.label }}</div>
+
+</div>

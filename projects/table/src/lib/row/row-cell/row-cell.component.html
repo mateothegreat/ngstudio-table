@@ -1,6 +1,7 @@
 <div [style.min-width]="cell?.width"
      [ngStyle]="cell?.theme"
      [style.text-align]="cell?.theme?.textAlign"
+     [style.height]="instance.config.theme?.row?.height"
      class="wrapper ngstudio-table-cell">
 
     <ng-container #container></ng-container>

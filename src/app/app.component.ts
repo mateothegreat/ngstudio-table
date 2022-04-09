@@ -1,7 +1,6 @@
 import { AfterViewInit, Component, ViewChild, ViewContainerRef } from '@angular/core';
 import { ReplaySubject } from 'rxjs';
 import { TableService } from '../../projects/table/src/lib/table.service';
-import { HeaderComponent } from './header/header.component';
 
 @Component({
     selector: 'app-root',
@@ -24,12 +23,12 @@ export class AppComponent implements AfterViewInit {
             {
 
                 a: 1,
-                b: '2'
+                b: '2 asdfasdfasdf asdfa'
 
             }, {
 
                 a: 3,
-                b: '4'
+                b: '4a sdfadsf'
 
             }
         ]);
@@ -42,12 +41,12 @@ export class AppComponent implements AfterViewInit {
 
                     name: 'a',
                     label: 'A',
-                    headerComponentType: HeaderComponent,
+                    // headerComponentType: HeaderComponent,
                     // cellComponentType: CellAComponent,
                     width: '300px',
                     theme: {
 
-                        textAlign: 'center'
+                        // textAlign: 'center'
                         // padding: '5px'
 
                     }
@@ -55,12 +54,25 @@ export class AppComponent implements AfterViewInit {
                 }, {
 
                     name: 'b',
-                    label: 'B',
-                    headerComponentType: HeaderComponent,
+                    label: 'B asdasdfasdfasf',
+                    // headerComponentType: HeaderComponent,
                     width: '300px',
                     theme: {
 
-                        textAlign: 'center'
+                        // textAlign: 'center'
+                        // padding: '5px'
+
+                    }
+
+                }, {
+
+                    name: 'b',
+                    label: 'B asdasdfasdfasf',
+                    // headerComponentType: HeaderComponent,
+                    width: '300px',
+                    theme: {
+
+                        // textAlign: 'center'
                         // padding: '5px'
 
                     }
@@ -74,11 +86,13 @@ export class AppComponent implements AfterViewInit {
 
                         {
 
+                            name: 'DELETE',
                             iconClass: 'fa-duotone fa-trash-xmark',
                             color: 'red'
 
                         }, {
 
+                            name: 'EDIT',
                             iconClass: 'fa-duotone fa-pen-to-square'
 
                         }
@@ -87,7 +101,7 @@ export class AppComponent implements AfterViewInit {
                     width: '100px',
                     theme: {
 
-                        textAlign: 'center'
+                        // textAlign: 'center'
                         // padding: '5px'
 
                     }
@@ -110,6 +124,7 @@ export class AppComponent implements AfterViewInit {
                 },
                 row: {
 
+                    height: '30px',
                     cursor: 'pointer',
                     borderBottomColor: '#666',
                     hover: {

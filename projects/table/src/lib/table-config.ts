@@ -24,6 +24,7 @@ export class TableConfig {
         },
         row?: {
 
+            height?: string,
             cursor?: string,
             borderBottomColor?: string,
             hover?: {
